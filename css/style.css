@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+    font-size: 18px;
+    line-height: 1.5em;
+    background: #f4f4f4;
+}
+
+#container {
+    border-radius: 5px;
+    box-shadow: 4px 8px 10px #888;
+    background: #333;
+    margin: 50px auto;
+    overflow: auto; /* ?? */
+    width: 60%;
+    min-height: 400px;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#shouts {
+    width: 90%;
+    background: #f4f4f4;
+    height: 400px;
+    margin: 20px auto;
+    overflow: auto; /*scroll bar*/
+}
+
+.shout {
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.shout .time {
+    color: #aaa;
+}
+
+#input {
+    width: 90%;
+    min-height: 80px;
+    margin: 10px auto;
+}
+
+#input input {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#input input[type="text"] {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#input input[type="text"]:focus {
+    box-shadow: 0 0 2px 2px #3498db;
+}
+
+#input input[type="submit"] {
+    font-size: 1.2em;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+#input input[type="submit"]:hover,
+#input input[type="submit"]:active {
+    background: #2980b9;
+}
+
+.error {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #c0392b;
+}
+
+.success {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #27ae60;
+}
